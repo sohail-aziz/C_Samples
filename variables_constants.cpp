@@ -22,5 +22,16 @@ int main (){
     //we can print multiple variables using a single printf statement.
     printf("your name is %c and your height is %f and your house number is %d \n",name,height,house_number);
 
+
+    /**
+     * we can take input from user and store in our variables. please note the & sign
+    */
+
+    float weight=0;
+    printf("Please enter your weight\n");
+    scanf("%f",&weight);
+
+    printf("Your weight is %f \n",weight);
+    
     return 0;
 }
