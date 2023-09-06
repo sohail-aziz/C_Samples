@@ -32,6 +32,16 @@ int main (){
     scanf("%f",&weight);
 
     printf("Your weight is %f \n",weight);
+
+    /**
+     * Constant in contrast to variables are those whose value can't be changed afte definition
+    */
+
+    const int date_of_birth=1990;
+
+    // can't do this, uncomment and test. compiler error.
+    //date_of_birth=1992 
+    printf("date of birth is %d \n",date_of_birth);
     
     return 0;
 }
