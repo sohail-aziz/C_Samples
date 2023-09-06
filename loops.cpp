@@ -22,25 +22,59 @@ int main(){
    }
 
 
-   /*
+   /* 
+     we can also define an array and assign values later
+   */
+   
+    int student_weights[3]; //we must specify the size of array if the values are assigned later in this case 3
+    student_weights[0] =56;
+    student_weights[1]=49;
+    student_weights[2]=60;
+
+    for(int i=0;i<3;i++){
+        printf("weight is %d \n",student_weights[i]);
+    }
+        
+    //taking value from user and store in array
+    //let's update the value of second array element 
+    printf("please enter the weight of 2nd student\n");
+    scanf("%d",&student_weights[1]);
+
+    //let's print weights again
+        for(int i=0;i<3;i++){
+        printf("weight is %d \n",student_weights[i]);
+    }
+
+
+
+
+   /**
+    * Break and Continue
+    * 
+    * Break would break the loop i.e whenever break statement is executed, the loop will end 
+    * Continue would continue to next iteration without executing any statement below the continue.
+    *  
+   */
+  int container[]={23,45,65,74,88,91,98,108}; 
   for(int index=0;index<8;index++){ 
     
-     printf("value=%d at index=%d\n",packages[index],index);
-   
-   ///don't inspect package no 5, there's something special 
+      ///don't inspect package no 5, there's something special 
     if(index==4){
       continue;
     }
+    //when index==4, the loop will continue to next iteration without executing anything below this line.
 
-    printf("value=%d at index=%d\n",packages[index],index);
+    printf("value=%d at index=%d\n",container[index],index);
     
     //if any container with value 91 is found, stop looking other containers and break.
-    if(packages[index]==91){
+    if(container[index]==91){
       printf("found!\n");
       break;
     } 
 
-  }*/
+  }
+
+   printf("Last line of the program\n");
 
     return 0;
 }
