@@ -5,10 +5,6 @@ int main ()
 
  int day;
 
-
-  printf("Hello World\n");
-
-  
   printf("please enter the day of the week\n"); 
 
   scanf("%d",&day);
